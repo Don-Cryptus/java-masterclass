@@ -3,6 +3,9 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
 
+/**
+ * Created by dev on 16/09/15.
+ */
 public class Demo {
     public static void main(String[] args) {
         LinkedList<String> placesToVisit = new LinkedList<String>();
