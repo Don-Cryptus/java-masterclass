@@ -1,9 +1,6 @@
 import java.util.Random;
 import java.util.concurrent.*;
 
-import static sun.nio.ch.IOStatus.EOF;
-
-
 public class Main {
     public static final String EOF = "EOF";
 
@@ -90,10 +87,11 @@ class MyConsumer implements Runnable {
                         continue;
                     }
 
-                    if (buffer.peek().equals(EOF)) {
+                    if (buffer.peek().equals(Main.EOF)) {
                         System.out.println(color + "Exiting");
                         break;
                     } else {
+
                         System.out.println(color + "Removed " + buffer.take());
                     }
                 } catch (InterruptedException e) {
