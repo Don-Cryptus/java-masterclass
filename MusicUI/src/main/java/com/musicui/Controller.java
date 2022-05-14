@@ -59,7 +59,7 @@ public class Controller {
         Task<Boolean> task = new Task<Boolean>() {
             @Override
             protected Boolean call() throws Exception {
-                return Datasource.getInstance().updateArtistName(artist.getId(), "AC/DC");
+                return Datasource.getInstance().updateArtistName(artist.getId(), "AC/DCX");
             }
         };
 
